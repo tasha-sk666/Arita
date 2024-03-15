@@ -226,6 +226,11 @@ a {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
+@media (max-width: 1024px) {
+  .mouse {
+    display: none;
+  }
+}
 
 .view-visible .mouse__view {
   opacity: 1;
