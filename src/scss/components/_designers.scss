@@ -1,0 +1,41 @@
+.designers-info {
+  display: flex;
+  opacity: 0;
+  transform: translateY(100px);
+
+  &__image {
+    width: 190px;
+    height: 142px;
+
+    @include small-tablet {
+      width: 150px;
+      height: 120px;
+    }
+  }
+
+  &__descr {
+    margin-left: 30px;
+
+    @include small-tablet {
+      margin-left: 15px;
+    }
+  }
+
+  &__country {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__by {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dull-color);
+  }
+}

@@ -1,0 +1,135 @@
+.preloader {
+  @include flex-all-center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: var(--fog-color);
+
+  &__forward {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    font-family: var(--font-merri);
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 91px;
+    opacity: 0;
+    transform: translate(-50%, -20%);
+    transition: opacity 0.3s var(--bezier), transform 0.3s var(--bezier);
+
+    @include small-tablet {
+      font-size: 52px;
+      line-height: 120%;
+    }
+
+    @include mobile {
+      font-size: 42px;
+    }
+  }
+
+  &__back {
+    font-family: var(--font-merri);
+    font-weight: 300;
+    font-size: 360px;
+    line-height: 453px;
+    color: var(--light-color);
+    opacity: 0;
+    transform: translateX(7%);
+    transition: opacity 0.3s var(--bezier);
+    animation: preloader 20s linear;
+
+    @include small-tablet {
+      font-size: 100px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    width: 330px;
+    height: 220px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background-color: var(--light-color);
+      transition: width 0.7s var(--bezier);
+    }
+
+    @include small-tablet {
+      overflow: hidden;
+      width: 250px;
+      height: 280px;
+    }
+  }
+
+  @include small-tablet {
+    align-items: flex-start;
+  }
+}
+
+@keyframes preloader {
+  0% {
+    transform: translateX(7%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.preloader-animation {
+  .preloader__back {
+    opacity: 0.15;
+  }
+
+  .preloader__forward {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .preloader__background {
+    &::before {
+      width: 330px;
+      transition-delay: 0.5s;
+    }
+  }
+}
+
+.preloader-hidden {
+  .preloader__back {
+    opacity: 0;
+  }
+
+  .preloader__forward {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.5s;
+  }
+
+  .preloader__background {
+    &::before {
+      width: 0;
+    }
+  }
+}
+
+.preloader-none {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}

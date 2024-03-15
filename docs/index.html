@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff">
+  <title>The Art of Arita</title>
+  <link rel="preload" href="fonts/Merriweather-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+
+  <div class="mouse" aria-hidden="true">
+  <div class="mouse__view">View</div>
+</div>
+
+  <div class="preloader">
+  <span class="preloader__back">Contemporary</span>
+  <p class="preloader__forward">The Art of Árita
+    <span class="preloader__background"></span>
+  </p>
+</div>
+
+  <input type="hidden" value="1" id="helper-input">
+
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo header__logo">
+      <span class="logo__letter">
+        <svg>
+          <use xlink:href="./img/sprite.svg#arita"></use>
+        </svg>
+      </span>
+      Arita /16
+    </a>
+    <nav class="nav header__nav" title="Page navigation">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Designers</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">History</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+      </ul>
+    </nav>
+    <button class="btn-reset burger header__burger" aria-label="Open menu" aria-expanded="false" data-burger></button>
+  </div>
+</header>
+
+    <main class="main-wrapepr">
+      <h2 class="visually-hidden">Designers portfolio</h2>
+      <section class="main-section slide-1">
+  <div class="container main-section__container">
+    <div class="slides-container">
+      <div class="wrapper">
+        <div class="slides-container__left">
+          <div class="main-section__explore">Explore Designers</div>
+          <div class="slides-container__slide slides-container__slide--active">
+            <div class="slides-container__text">
+              <h2 class="slides-container__title slides-container__title--light">Kirstie van Noort</h2>
+              <div class="designers-info">
+                <img src="./img/img-1.jpg" alt="Kirstie van Noort" class="designers-info__image">
+                <div class="designers-info__descr">
+                  <div class="designers-info__country">Netherlands</div>
+                  <div class="designers-info__by">photo By <br> Kenta Hasegawa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slides-container__slide">
+            <div class="slides-container__text">
+              <h2 class="slides-container__title slides-container__title--dark">Tomás Alonso</h2>
+              <div class="designers-info">
+                <img src="./img/img-2.jpg" alt="Tomás Alonso" class="designers-info__image">
+                <div class="designers-info__descr">
+                  <div class="designers-info__country">Spain</div>
+                  <div class="designers-info__by">photo By <br> Kenta Hasegawa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slides-container__slide">
+            <div class="slides-container__text">
+              <h2 class="slides-container__title">Stefan Diez</h2>
+              <div class="designers-info">
+                <img src="./img/img-3.jpg" alt="Stefan Diez" class="designers-info__image">
+                <div class="designers-info__descr">
+                  <div class="designers-info__country">Germany</div>
+                  <div class="designers-info__by">photo By <br> Kenta Hasegawa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slides-container__slide">
+            <div class="slides-container__text">
+              <h2 class="slides-container__title">Teruhiro Yanagihara</h2>
+              <div class="designers-info">
+                <img src="./img/img-4.jpg" alt="Teruhiro Yanagihara" class="designers-info__image">
+                <div class="designers-info__descr">
+                  <div class="designers-info__country">Japan</div>
+                  <div class="designers-info__by">photo By <br> Kenta Hasegawa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slides-container__slide">
+            <div class="slides-container__text">
+              <h2 class="slides-container__title">Leon Ransmeier</h2>
+              <div class="designers-info">
+                <img src="./img/img-5.jpg" alt="Leon Ransmeier" class="designers-info__image">
+                <div class="designers-info__descr">
+                  <div class="designers-info__country">New York, USA</div>
+                  <div class="designers-info__by">photo By <br> Kenta Hasegawa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slides-container__bg slide-bg">
+          <div class="slide-bg__inner slide-bg__inner--active">
+            <a href="#" class="slide-bg__link" data-bg="./img/1.jpg"></a>
+          </div>
+          <div class="slide-bg__inner slide-bg__inner--index">
+            <a href="#" class="slide-bg__link" data-bg="./img/2.jpg"></a>
+          </div>
+          <div class="slide-bg__inner">
+            <a href="#" class="slide-bg__link" data-bg="./img/3.jpg"></a>
+          </div>
+          <div class="slide-bg__inner">
+            <a href="#" class="slide-bg__link" data-bg="./img/4.jpg"></a>
+          </div>
+          <div class="slide-bg__inner">
+            <a href="#" class="slide-bg__link" data-bg="./img/5.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shapes" aria-hidden="true">
+    <div class="shapes__item shapes__item--active">
+      <div class="shapes__content" data-bg="#C9B39B"></div>
+    </div>
+    <div class="shapes__item index">
+      <div class="shapes__content" data-bg="#D6D8CF"></div>
+    </div>
+    <div class="shapes__item">
+      <div class="shapes__content" data-bg="#D2E5DE"></div>
+    </div>
+    <div class="shapes__item">
+      <div class="shapes__content" data-bg="#DFE5E7"></div>
+    </div>
+    <div class="shapes__item">
+      <div class="shapes__content" data-bg="#D6D8CF"></div>
+    </div>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

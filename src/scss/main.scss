@@ -1,0 +1,14 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import "./components/mouse";
+@import "./components/preloader";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/main";
+@import "./components/designers";
+@import "./components/shapes";

@@ -1,0 +1,16 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 66px;
+    }
+  }
+
+  &__link {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

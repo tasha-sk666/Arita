@@ -1,0 +1,19 @@
+:root {
+  --font-family: "Oswald", sans-serif;
+  --font-merri: "Merriweather", sans-serif;
+  --content-width: 1290px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --light-color: #fff;
+  --black-color: #000;
+  --fog-color: #b1b3b2;
+  --dull-color: #727272;
+  --gray-color: #b5b7b4;
+  --gallery-color: #c4c3c0;
+  --silver-color: #b5b8c2;
+  --camel-color: #c9b39b;
+  --kingdom-color: #d6d8cf;
+  --mint-color: #d2e5de;
+  --blue-color: #dfe5e7;
+  --bezier: cubic-bezier(0.77, 0.125, 0.265, 1.04);
+}

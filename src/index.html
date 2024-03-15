@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+
+  @include('partials/mouse.html')
+  @include('partials/preloader.html')
+
+  <input type="hidden" value="1" id="helper-input">
+
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main-wrapepr">
+      <h2 class="visually-hidden">Designers portfolio</h2>
+      @include('partials/main.html')
+    </main>
+  </div>
+
+</body>
+
+</html>
